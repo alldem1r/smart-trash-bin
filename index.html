@@ -209,31 +209,21 @@
           src="https://via.placeholder.com/300"
           alt="Smart Trash Bin Image"
         />
-        <form class="uniForm">
-          <h3>Form 1</h3>
-
-          <!-- Hidden Required Fields -->
-          <input type="hidden" name="project_name" value="Site Name" />
-          <input type="hidden" name="admin_email" value="admin@gmail.com" />
-          <input type="hidden" name="form_subject" value="Form Subject 1" />
-          <!-- END Hidden Required Fields -->
-
-          <input
-            type="text"
-            name="Name"
-            placeholder="You name..."
-            required
-          /><br />
-          <input
-            type="text"
-            name="E-mail"
-            placeholder="You E-mail..."
-            required
-          /><br />
-          <input type="text" name="Phone" placeholder="You phone..." /><br />
-
-          <button>Send</button>
-        </form>
+        <form
+  action="https://formspree.io/f/mpzvkloq"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
       </div>
     </div>
     <script src="script.js" defer></script>
