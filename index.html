@@ -209,29 +209,28 @@
           src="https://via.placeholder.com/300"
           alt="Smart Trash Bin Image"
         />
-        <form class="uniForm">
+        <form class="uniForm" action="mail.php" method="post">
           <h3>Form 1</h3>
-
-          <!-- Hidden Required Fields -->
           <input type="hidden" name="project_name" value="Site Name" />
-          <input type="hidden" name="admin_email" value="admin@gmail.com" />
+          <input
+            type="hidden"
+            name="admin_email"
+            value="zhumakhadyrs@gmail.com"
+          />
           <input type="hidden" name="form_subject" value="Form Subject 1" />
-          <!-- END Hidden Required Fields -->
-
           <input
             type="text"
             name="Name"
-            placeholder="You name..."
+            placeholder="Your name..."
             required
           /><br />
           <input
-            type="text"
-            name="E-mail"
-            placeholder="You E-mail..."
+            type="email"
+            name="Email"
+            placeholder="Your E-mail..."
             required
           /><br />
-          <input type="text" name="Phone" placeholder="You phone..." /><br />
-
+          <input type="text" name="Phone" placeholder="Your phone..." /><br />
           <input type="submit" value="SEND" />
         </form>
       </div>
@@ -240,5 +239,3 @@
     <script src="main.js"></script>
   </body>
 </html>
-
-
