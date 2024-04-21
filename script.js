@@ -1,24 +1,23 @@
-window.addEventListener("scroll", function () {
-  var navBar = document.getElementById("navBar");
-  var navItems = navBar.querySelectorAll(".nav-item");
-  var scrollPercentage = (window.scrollY / document.body.scrollHeight) * 100;
-  var navBarHeight = parseInt(getComputedStyle(navBar).height);
+const mailPath = "./mail.php";
 
-  if (scrollPercentage > 2) {
-    navBar.style.height = "50px";
-    navBar.style.fontSize = "16px";
-    navBar.style.padding = "0px 50px";
-    navBar.style.left = "50px";
-    navItems.forEach(function (item) {
-      item.style.paddingInlineStart = "3%";
-    });
-  } else {
-    navBar.style.height = navBarHeight + "px";
-    navBar.style.fontSize = "20px";
-    navBar.style.padding = "10px 20px";
-    navBar.style.left = "0";
-    navItems.forEach(function (item) {
-      item.style.paddingInlineStart = "2%";
-    });
-  }
+document.querySelectorAll(".uniForm").forEach((e) => {
+  e.addEventListener("submit", function (e) {
+    let th = this,
+      params = new FormData(this),
+      request = new XMLHttpRequest();
+
+    request.open("POST", mailPath, true);
+    request.send(params);
+
+    request.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        setTimeout(function () {
+          th.reset();
+        }, 1000);
+        alert("Thank you!");
+      }
+    };
+
+    e.preventDefault();
+  });
 });
