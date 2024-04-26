@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Smart Trash Bin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/logo.png" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Taraz city, Domalak ana 266</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Безвыходных: 00:00 - 23:59 </small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+7 777 930 44 65</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href="https://t.me/SmartBin12_bot"><i class="fab fa-telegram"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href="https://www.instagram.com/smart_trash_bin/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0 text-primary">Smart Trash Bin</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#main" class="nav-item nav-link">Главная</a>
+                <a href="#about" class="nav-item nav-link">Общее</a>
+                <a href="#advantages" class="nav-item nav-link">Преимущества</a>
+                <a href="#features" class="nav-item nav-link">Функционал</a>
+                <a href="#structure" class="nav-item nav-link">Структура</a>
+                <a href="#sponsors" class="nav-item nav-link">Спонсоры</a>
+                <a href="#mechanism" class="nav-item nav-link">Механизм</a>
+            <a href="#zakaz" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Заказать<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid header bg-primary p-0 mb-5"  id="main">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="display-4 text-white mb-5">Инновационное решение для управления отходами</h1>
+                <div class="row g-4">
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">356</h2>
+                            <p class="text-light mb-0">Рекомендуют остальным купить</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">503</h2>
+                            <p class="text-light mb-0">Уже купили</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h2 class="text-white mb-1" data-toggle="counter-up">462</h2>
+                            <p class="text-light mb-0">Довольны покупкой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/wifi.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/gal.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/vmes.png" alt="">
+                        <div class="owl-carousel-text">
+                            <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded w-75 align-self-end" src="img/gal.png" alt="">
+                        <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/img2.jpeg" alt="" style="margin-top: -25%;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Общее</p>
+                    <h1 class="mb-4">Почему вам стоит довериться нам?</h1>
+                    <p>Наша компания работает уже более трех лет, соответственно имеем колоссальный опыт в инновационных технологиях.</p>
+                    <p class="mb-4">Более того, наши сотрудники ежедневно работают, каждый раз улучшая наш продукт.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Анализ отходов на основе ИИ</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Внедрение Wi-Fi роутера</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Бонусная система</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="#zakaz">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-xxl py-5" id="advantages">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Наши Преимущества</p>
+                <h1>Преимущества</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4 class="mb-3">Экологичность</h4>
+                        <p class="mb-4">Smart Trash Bin служит для очистки населенных пунктов от отходов, сохраняя нашу драгоценную экологию.</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-x-ray text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Автоматическая переработка</h4>
+                        <p class="mb-4">Smart Trash Bin автоматически сортирует отходы и распределяет по контейнерам.</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-brain text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Умный мониторинг</h4>
+                        <p class="mb-4">Программа отображает положение Smart Trash Bin в настоящее время</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h4 class="mb-3">Бонусная система</h4>
+                        <p class="mb-4">При использовании специальной программы пользователи будут получать бонусы на их реальный счет.</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4 class="mb-3">Вместительность</h4>
+                        <p class="mb-4">Smart Trash Bin большой обьем, то есть большая вместительность.</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-vials text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Универсальность</h4>
+                        <p class="mb-4">Smart Trash Bin за счет своих датчиков способен определять шесть основных вида мусора</p>
+                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0" id="features">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Функционал</p>
+                        <h1 class="text-white mb-4">Почему стоит выбирать нас?</h1>
+                        <p class="text-white mb-4 pb-2">МЫ предлагаем такие функции, как сортировку мусора и мониторинг в
+                            реальном времени, что делает его идеальным выбором для современных и
+                            устойчивых потребностей в утилизации отходов.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Сортировка на основе ИИ</p>
+                                        <h5 class="text-white mb-0">Высокое качество сортировки</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Высокое качество</p>
+                                        <h5 class="text-white mb-0">Поддержка</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Просмотр маршрута и заполненности корзин</p>
+                                        <h5 class="text-white mb-0">Отслеживание положения Smart Trash Bin </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 часа в сутки </p>
+                                        <h5 class="text-white mb-0">Поддержка<h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/wifi.png" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec-05" id="structure">
+        <div class="container">
+          <h1>Структура Smart Trash Bin</h1>
+          <div class="row">
+            <div class="col">
+              <img src="img/12.jpeg" class="img-fluid" alt="Структура Smart Trash Bin">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="table-container">
+    <table class="image-table">
+        <tbody>
+            <tr>
+                <td class="image-cell">
+                    <img src="img/structure1.JPG" class="table-image">
+                </td>
+                <td class="image-cell">
+                    <img src="img/structure2.JPG" class="table-image">
+                </td>
+                <td class="image-cell">
+                    <img src="img/structure3.JPG" class="table-image">
+                </td>
+            </tr>
+            <tr>
+                <td class="image-cell">
+                    <img src="img/structure4.JPG" class="table-image">
+                </td>
+                <td class="image-cell">
+                    <img src="img/structure5.JPG" class="table-image">
+                </td>
+                <td class="image-cell">
+                    <img src="img/structure6.JPG" class="table-image">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+
+    <div class="container-xxl py-5" id="sponsors">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">спонсоры</p>
+                <h1>Наши спонсоры</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/sponsor1.png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Centrecredit</h5>
+                            <p class="text-primary">sponsor</p>
+                            <div class="team-social text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/sponsor2.png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>UNESKO</h5>
+                            <p class="text-primary">sponsor</p>
+                            <div class="team-social text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid fit-content" src="img/sponsor3.jpeg"   alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Turaqty jol</h5>
+                            <p class="text-primary">sponsor</p>
+                            <div class="team-social text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/sponsor4.png" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Kazakhstan</h5>
+                            <p class="text-primary">main sponsor</p>
+                            <div class="team-social text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="sec-07" id="mechanism">
+    <div class="container">
+        <h1>Механизм</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="img/telegram.png" class="telegram-icon">
+                        <h3>Telegram Bot</h3>
+                        <p class="p-text">Telegram Bot предоставляет сотрудникам доступ к данным от ультразвуковых датчиков. Telegram Bot информирует о местоположении и уровне наполнения контролируемых контейнеров, а также позволяет найти ближайший доступный контейнер для вывоза мусора или сообщить о проблеме. Сотрудники могут получить доступ к еще большей информации о контейнерах, запросить самовывоз или техническое обслуживание.</p>
+                    </td>
+                    <td>
+                        <img src="img/phone_telegram.png">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+    <div class="container-xxl py-5" id="zakaz">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Заказ</p>
+                    <h1 class="mb-4">Закажите наш товар</h1>
+                    <p class="mb-4">Мы работаем круглосуточно , ваш заказ моментално обработается и сформируется в течении одного рабочего дня. МЫ готовы доставить наш продукт в любоую точку Казахстана !</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Позвоните нам прямо сейчас!</p>
+                            <h5 class="mb-0">+7 777 930 4465</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Напишите нам прямо сейчас!</p>
+                            <h5 class="mb-0">zhumakadyrs</br>@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form action="https://formspree.io/f/mpzvkloq"
+  method="POST">
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" name="name" required placeholder="Ваше Имя" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" name="email" placeholder="Ваша Почта" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" name="tel" required placeholder="Ваш Номер Телефона" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" name="city" style="height: 55px;">
+                                        <option selected>Тараз</option>
+                                        <option value="Алматы">Алматы</option>
+                                        <option value="Астана">Астана</option>
+                                        <option value="ШЫмкент">Шымкент</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" name="text" required placeholder="Ваши особые пожелания"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Заказать</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Мнения</p>
+                <h1>Что говорит общество?</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/clien1.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4" style="color: white;">«Трудно улучшить окружающую среду и экономику, если мы не займемся серьезной сортировкой отходов»</p>
+                        <h5 class="mb-1">Шапағат</h5>
+                        <p>
+                        <span class="fst-italic">Эколог</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client2.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>«Людям необходимо вкладывать свое личное время и деньги в правильную утилизацию отходов».
+</p>
+                        <h5 class="mb-1">Анна Ростова</h5>
+                        <span class="fst-italic">Эко-активист</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client3.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>«Большая часть бумаги попадает в мусор, смешивается с другими отходами и становится непригодной для переработки».</p>
+                        <h5 class="mb-1">Абзал Амиров</h5>
+                        <span class="fst-italic">Предпрениматель</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client4.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"Слишком большой налог на отходы,
+  клиенты не смотрят на поля сортировки"</p>
+                        <h5 class="mb-1">Аскар Науатов</h5>
+                        <span class="fst-italic">Предпрениматель</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client5.png" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>«Все зарабатывают на переработке отходов, кроме потребителя»</p>
+                        <h5 class="mb-1">Юлия Леонидовна</h5>
+                        <span class="fst-italic">Житель</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 style="color: white;">Telegram бот</h5>
+                <a href="https://t.me/SmartBin12_bot" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h5 style="color: white;">Instagram</h5>
+                <a href="https://www.instagram.com/smart_trash_bin/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <h5 style="color: white;">Whatsapp</h5>
+                <a href="https://wa.me/77779304465" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+    <a href="#main" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script>
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function(){
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if(startValue == endValue){
+                clearInterval(counter);
+            }
+        }, duration);
+    })
+      </script>
+</body>
+
+</html>
