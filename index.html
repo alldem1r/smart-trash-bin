@@ -35,11 +35,11 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center py-3 me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>Taraz city, Domalak ana 266</small>
+                    <small class="lang" key="address">Taraz city, Domalak ana 266</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Безвыходных: 00:00 - 23:59 </small>
+                    <small class="lang" key="work">Безвыходных: 00:00 - 23:59 </small>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -59,67 +59,82 @@
 
 
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0 text-primary">Smart Trash Bin</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#main" class="nav-item nav-link">Главная</a>
-                <a href="#about" class="nav-item nav-link">Общее</a>
-                <a href="#advantages" class="nav-item nav-link">Преимущества</a>
-                <a href="#features" class="nav-item nav-link">Функционал</a>
-                <a href="#structure" class="nav-item nav-link">Структура</a>
-                <a href="#sponsors" class="nav-item nav-link">Спонсоры</a>
-                <a href="#mechanism" class="nav-item nav-link">Механизм</a>
-            <a href="#zakaz" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Заказать<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h1 class="m-0 text-primary">Smart Trash Bin</h1>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="dropdown me-4">
+    <button class="btn btn-secondary dropdown-toggle lang" key="language" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-globe"></i> <!-- This adds the globe icon -->
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+        <li><button class="dropdown-item translate" id="en">🇺🇸 English</button></li>
+        <li><button class="dropdown-item translate" id="ru">🇷🇺 Русский</button></li>
+        <li><button class="dropdown-item translate" id="kz">🇰🇿 Қазақша</button></li>
+    </ul>
+</div>
 
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="#main" class="nav-item nav-link lang" key="nav1">Главная</a>
+            <a href="#about" class="nav-item nav-link lang" key="nav2" >Общее</a>
+            <a href="#advantages" class="nav-item nav-link lang" key="nav3">Преимущества</a>
+            <a href="#features" class="nav-item nav-link lang" key="nav4">Функционал</a>
+            <a href="#structure" class="nav-item nav-link lang" key="nav5">Структура</a>
+            <a href="#sponsors" class="nav-item nav-link lang" key="nav6">Спонсоры</a>
+            <a href="#mechanism" class="nav-item nav-link lang" key="nav7">Механизм</a>
+            <a href="#zakaz" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block lang" key="order">Заказать<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </div>
+</nav>
+
+
+
+ 
 
 
     <div class="container-fluid header bg-primary p-0 mb-5"  id="main">
         <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
-                <h1 class="display-4 text-white mb-5">Инновационное решение для управления отходами</h1>
+                <h1 class="display-4 text-white mb-5 lang" key="title">Инновационное решение для управления отходами</h1>
                 <div class="row g-4">
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
                             <h2 class="text-white mb-1" data-toggle="counter-up">356</h2>
-                            <p class="text-light mb-0">Рекомендуют остальным купить</p>
+                            <p class="text-light mb-0 lang" key="stat1">Рекомендуют остальным купить</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
                             <h2 class="text-white mb-1" data-toggle="counter-up">503</h2>
-                            <p class="text-light mb-0">Уже купили</p>
+                            <p class="text-light mb-0 lang" key="stat2">Уже купили</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="border-start border-light ps-4">
                             <h2 class="text-white mb-1" data-toggle="counter-up">462</h2>
-                            <p class="text-light mb-0">Довольны покупкой</p>
+                            <p class="text-light mb-0 lang" key="stat3">Довольны покупкой</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="owl-carousel header-carousel">
+             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel lang">
                     <div class="owl-carousel-item position-relative">
                         <img class="img-fluid" src="img/img2.jpeg" alt="">
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
                         </div>
                     </div>
-                    <div class="owl-carousel-item position-relative">
+                    <div class="owl-carousel-item position-relative lang">
                         <img class="img-fluid" src="img/img2.jpeg" alt="">
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
                         </div>
                     </div>
-                    <div class="owl-carousel-item position-relative">
+                    <div class="owl-carousel-item position-relative lang">
                         <img class="img-fluid" src="img/img2.jpeg" alt="">
                         <div class="owl-carousel-text">
                             <h1 class="display-1 text-white mb-0">Smart Trash Bin</h1>
@@ -143,15 +158,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Общее</p>
-                    <h1 class="mb-4">Почему вам стоит довериться нам?</h1>
-                    <p>Наша компания работает уже более трех лет, соответственно имеем колоссальный опыт в инновационных технологиях.</p>
-                    <p class="mb-4">Более того, наши сотрудники ежедневно работают, каждый раз улучшая наш продукт.</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Анализ отходов на основе ИИ</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Информация об уровне заполненности</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Внедрение Wi-Fi роутера</p>
-                    <p><i class="far fa-check-circle text-primary me-3"></i>Бонусная система</p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="#zakaz">Заказать</a>
+                    <p class="d-inline-block border rounded-pill py-1 px-4 lang" key="nav2">Общее</p>
+                    <h1 class="mb-4 lang" key="why_us">Почему вам стоит довериться нам?</h1>
+                    <p class="lang" key="why_us_desc1">Наша компания работает уже более трех лет, соответственно имеем колоссальный опыт в инновационных технологиях.</p>
+                    <p class="mb-4 lang" key="why_us_desc2">Более того, наши сотрудники ежедневно работают, каждый раз улучшая наш продукт.</p>
+                    <p class="lang" key="why_us_opt1"><i class="far fa-check-circle text-primary me-3"></i>Анализ отходов на основе ИИ</p>
+                    <p class="lang" key="why_us_opt2"><i class="far fa-check-circle text-primary me-3"></i>Информация об уровне заполненности</p>
+                    <p class="lang" key="why_us_opt3"><i class="far fa-check-circle text-primary me-3"></i>Внедрение Wi-Fi роутера</p>
+                    <p class="lang" key="why_us_opt4"><i class="far fa-check-circle text-primary me-3"></i>Бонусная система</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3 lang" key="order" href="#zakaz">Заказать</a>
                 </div>
             </div>
         </div>
@@ -163,8 +178,8 @@
     <div class="container-xxl py-5" id="advantages">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Наши Преимущества</p>
-                <h1>Преимущества</h1>
+                <p class="d-inline-block border rounded-pill py-1 px-4 lang" key="advantages">Наши Преимущества</p>
+                <h1 class="lang" key="advantages">Преимущества</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -172,9 +187,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fas fa-tree"></i>
                         </div>
-                        <h4 class="mb-3">Экологичность</h4>
-                        <p class="mb-4">Smart Trash Bin служит для очистки населенных пунктов от отходов, сохраняя нашу драгоценную экологию.</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle1">Экологичность</h4>
+                        <p class="mb-4 lang" key="advDesc1">Smart Trash Bin служит для очистки населенных пунктов от отходов, сохраняя нашу драгоценную экологию.</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -182,9 +197,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-x-ray text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Автоматическая переработка</h4>
-                        <p class="mb-4">Smart Trash Bin автоматически сортирует отходы и распределяет по контейнерам.</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle2">Автоматическая переработка</h4>
+                        <p class="mb-4 lang" key="advDesc2">Smart Trash Bin автоматически сортирует отходы и распределяет по контейнерам.</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -192,9 +207,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-brain text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Умный мониторинг</h4>
-                        <p class="mb-4">Программа отображает положение Smart Trash Bin в настоящее время</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle3">Умный мониторинг</h4>
+                        <p class="mb-4 lang" key="advDesc3">Программа отображает положение Smart Trash Bin в настоящее время</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -202,9 +217,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fas fa-piggy-bank"></i>
                         </div>
-                        <h4 class="mb-3">Бонусная система</h4>
-                        <p class="mb-4">При использовании специальной программы пользователи будут получать бонусы на их реальный счет.</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle4">Бонусная система</h4>
+                        <p class="mb-4 lang" key="advDesc4">При использовании специальной программы пользователи будут получать бонусы на их реальный счет.</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -212,9 +227,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fas fa-cube"></i>
                         </div>
-                        <h4 class="mb-3">Вместительность</h4>
-                        <p class="mb-4">Smart Trash Bin большой обьем, то есть большая вместительность.</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle5">Вместительность</h4>
+                        <p class="mb-4 lang" key="advDesc5">Smart Trash Bin большой обьем, то есть большая вместительность.</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -222,9 +237,9 @@
                         <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
                             <i class="fa fa-vials text-primary fs-4"></i>
                         </div>
-                        <h4 class="mb-3">Универсальность</h4>
-                        <p class="mb-4">Smart Trash Bin за счет своих датчиков способен определять шесть основных вида мусора</p>
-                        <a class="btn" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
+                        <h4 class="mb-3 lang" key="advTitle6">Универсальность</h4>
+                        <p class="mb-4 lang" key="advDesc6">Smart Trash Bin за счет своих датчиков способен определять шесть основных вида мусора</p>
+                        <a class="btn lang" key="order" href="#zakaz"><i class="fa fa-plus text-primary me-3"></i>Узнать</a>
                     </div>
                 </div>
             </div>
@@ -238,20 +253,21 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
                     <div class="p-lg-5 ps-lg-0">
-                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Функционал</p>
-                        <h1 class="text-white mb-4">Почему стоит выбирать нас?</h1>
-                        <p class="text-white mb-4 pb-2">МЫ предлагаем такие функции, как сортировку мусора и мониторинг в
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4 lang" key="function">Функционал</p>
+                        <h1 class="text-white mb-4 lang" key="function_qs">Почему стоит выбирать нас?</h1>
+                        <p class="text-white mb-4 pb-2 lang" key="function_p">Мы предлагаем такие функции, как сортировку мусора и мониторинг в
                             реальном времени, что делает его идеальным выбором для современных и
                             устойчивых потребностей в утилизации отходов.</p>
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-user-md text-primary"></i>
+                                        <i class="fa fa-comment-medical text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="text-white mb-2">Сортировка на основе ИИ</p>
-                                        <h5 class="text-white mb-0">Высокое качество сортировки</h5>
+                                        <h5 class="text-white mb-0 lang" key="functionTitle1">Высокое качество сортировки</h5>
+                                        <p class="text-white mb-2 lang" key="functionDesc1">Сортировка на основе ИИ</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -261,19 +277,19 @@
                                         <i class="fa fa-check text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="text-white mb-2">Высокое качество</p>
-                                        <h5 class="text-white mb-0">Поддержка</h5>
+                                        <h5 class="text-white mb-0"key="functionTitle2">Доступность</h5>
+                                        <p class="text-white mb-2" key="functionDesc2">Удобно и комфортно</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
-                                        <i class="fa fa-comment-medical text-primary"></i>
+                                        <i class="fa fa-user-md text-primary  fa"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="text-white mb-2">Просмотр маршрута и заполненности корзин</p>
-                                        <h5 class="text-white mb-0">Отслеживание положения Smart Trash Bin </h5>
+                                        <h5 class="text-white mb-0 lang" key="functionTitle3">Отслеживание положения Smart Trash Bin </h5>
+                                        <p class="text-white mb-2 lang" key="functionDesc3">Просмотр маршрута и заполненности корзин</p>
                                     </div>
                                 </div>
                             </div>
@@ -283,8 +299,9 @@
                                         <i class="fa fa-headphones text-primary"></i>
                                     </div>
                                     <div class="ms-4">
-                                        <p class="text-white mb-2">24 часа в сутки </p>
-                                        <h5 class="text-white mb-0">Поддержка<h5>
+                                        <h5 class="text-white mb-0 lang" key="functionTitle4">Поддержка<h5></h5>
+                                        <p class="text-white mb-2 lang" key="functionDesc4">24 часа в сутки </p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +319,7 @@
 
     <section class="sec-05" id="structure">
         <div class="container">
-          <h1>Структура Smart Trash Bin</h1>
+          <h1 class="lang" key="structure">Структура Smart Trash Bin</h1>
           <div class="row">
             <div class="col">
               <img src="img/12.jpeg" class="img-fluid" alt="Структура Smart Trash Bin">
@@ -345,8 +362,8 @@
     <div class="container-xxl py-5" id="sponsors">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">спонсоры</p>
-                <h1>Наши спонсоры</h1>
+                <p class="d-inline-block border rounded-pill py-1 px-4 lang" key="sponsors">спонсоры</p>
+                <h1 class="lang" key="sponsorsTitle">Наши спонсоры</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -411,14 +428,14 @@
 
     <section class="sec-07" id="mechanism">
     <div class="container">
-        <h1>Механизм</h1>
+        <h1 class="lang" key="mechanism">Механизм</h1>
         <table>
             <tbody>
                 <tr>
                     <td>
                         <img src="img/telegram.png" class="telegram-icon">
-                        <h3>Telegram Bot</h3>
-                        <p class="p-text">Telegram Bot предоставляет сотрудникам доступ к данным от ультразвуковых датчиков. Telegram Bot информирует о местоположении и уровне наполнения контролируемых контейнеров, а также позволяет найти ближайший доступный контейнер для вывоза мусора или сообщить о проблеме. Сотрудники могут получить доступ к еще большей информации о контейнерах, запросить самовывоз или техническое обслуживание.</p>
+                        <h3 class="lang" key="tg_bot">Telegram Bot</h3>
+                        <p class="p-text lang" key="mechanism_text">Telegram Bot предоставляет сотрудникам доступ к данным от ультразвуковых датчиков. Telegram Bot информирует о местоположении и уровне наполнения контролируемых контейнеров, а также позволяет найти ближайший доступный контейнер для вывоза мусора или сообщить о проблеме. Сотрудники могут получить доступ к еще большей информации о контейнерах, запросить самовывоз или техническое обслуживание.</p>
                     </td>
                     <td>
                         <img src="img/phone_telegram.png">
@@ -434,15 +451,15 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Заказ</p>
-                    <h1 class="mb-4">Закажите наш товар</h1>
-                    <p class="mb-4">Мы работаем круглосуточно , ваш заказ моментално обработается и сформируется в течении одного рабочего дня. МЫ готовы доставить наш продукт в любоую точку Казахстана !</p>
+                    <p class="d-inline-block border rounded-pill py-1 px-4 lang" key="order">Заказ</p>
+                    <h1 class="mb-4 lang" key="order_title">Закажите наш товар</h1>
+                    <p class="mb-4 lang" key="order_text1">Мы работаем круглосуточно , ваш заказ моментално обработается и сформируется в течении одного рабочего дня. МЫ готовы доставить наш продукт в любоую точку Казахстана !</p>
                     <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
                             <i class="fa fa-phone-alt text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Позвоните нам прямо сейчас!</p>
+                            <p class="mb-2 lang" key="order_text2">Позвоните нам прямо сейчас!</p>
                             <h5 class="mb-0">+7 777 930 4465</h5>
                         </div>
                     </div>
@@ -451,7 +468,7 @@
                             <i class="fa fa-envelope-open text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Напишите нам прямо сейчас!</p>
+                            <p class="mb-2 lang" key="order_text3">Напишите нам прямо сейчас!</p>
                             <h5 class="mb-0">zhumakadyrs</br>@gmail.com</h5>
                         </div>
                     </div>
@@ -475,7 +492,7 @@
                                         <option selected>Тараз</option>
                                         <option value="Алматы">Алматы</option>
                                         <option value="Астана">Астана</option>
-                                        <option value="ШЫмкент">Шымкент</option>
+                                        <option value="Шымкент">Шымкент</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
@@ -498,50 +515,49 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <p class="d-inline-block border rounded-pill py-1 px-4">Мнения</p>
-                <h1>Что говорит общество?</h1>
+                <p class="lang d-inline-block border rounded-pill py-1 px-4" key="opinions">Мнения</p>
+                <h1 class="lang" key="opinion_qs">Что говорит общество?</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/clien1.png" style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4" style="color: white;">«Трудно улучшить окружающую среду и экономику, если мы не займемся серьезной сортировкой отходов»</p>
-                        <h5 class="mb-1">Шапағат</h5>
+                    <div class="testimonial-text rounded text-center p-4 lang" key="opinion1" style="color: white;">«Трудно улучшить окружающую среду и экономику, если мы не займемся серьезной сортировкой отходов»</p>
+                        <h5 class="mb-1 lang" key="opinion_name1">Шапағат</h5>
                         <p>
-                        <span class="fst-italic">Эколог</span>
+                        <span class="fst-italic lang" key="opinion_title1">Эколог</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client2.png" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>«Людям необходимо вкладывать свое личное время и деньги в правильную утилизацию отходов».
+                        <p class="lang" key="opinion2">«Людям необходимо вкладывать свое личное время и деньги в правильную утилизацию отходов».
 </p>
-                        <h5 class="mb-1">Анна Ростова</h5>
-                        <span class="fst-italic">Эко-активист</span>
+                        <h5 class="mb-1 lang" key="opinion_name2">Анна Ростова</h5>
+                        <span class="fst-italic lang" key="opinion_title2">Эко-активист</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client3.png" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>«Большая часть бумаги попадает в мусор, смешивается с другими отходами и становится непригодной для переработки».</p>
-                        <h5 class="mb-1">Абзал Амиров</h5>
-                        <span class="fst-italic">Предприниматель</span>
+                        <p class="lang" key="opinion3">«Большая часть бумаги попадает в мусор, смешивается с другими отходами и становится непригодной для переработки».</p>
+                        <h5 class="mb-1 lang" key="opinion_name3">Абзал Амиров</h5>
+                        <span class="fst-italic lang" key="opinion_title3">Предприниматель</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client4.png" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>"Слишком большой налог на отходы,
-  клиенты не смотрят на поля сортировки"</p>
-                        <h5 class="mb-1">Аскар Науатов</h5>
-                        <span class="fst-italic">Предприниматель</span>
+                        <p class="lang" key="opinion4">«Слишком большой налог на отходы, клиенты не смотрят на поля сортировки».</p>
+                        <h5 class="mb-1 lang" key="opinion_name4">Аскар Науатов</h5>
+                        <span class="fst-italic lang" key="opinion_title4">Предприниматель</span>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/client5.png" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
-                        <p>«Все зарабатывают на переработке отходов, кроме потребителя»</p>
-                        <h5 class="mb-1">Юлия Леонидовна</h5>
-                        <span class="fst-italic">Житель</span>
+                        <p class="lang" key="opinion5">«Все зарабатывают на переработке отходов, кроме потребителя»</p>
+                        <h5 class="mb-1 lang" key="opinion_name5">Юлия Леонидовна</h5>
+                        <span class="fst-italic lang" key="opinion_title5">Житель</span>
                     </div>
                 </div>
             </div>
@@ -583,7 +599,7 @@
     <a href="#main" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-
+    <script src="js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
