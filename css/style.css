@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.dropdown-toggle {
+  background-color: #007bff; /* Background color for the button */
+  color: #007bff; /* Text color */
+}
+
+.dropdown-menu {
+  background-color: #fff; /* Dropdown background color */
+}
+
+.dropdown-item:hover {
+  background-color: #007bff; /* Change color on hover */
+  color: white; /* Change text color on hover */
+}
+
 .image-table {
   width: 100%;
   table-layout: fixed;
